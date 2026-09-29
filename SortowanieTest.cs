@@ -30,6 +30,11 @@ namespace Sortowanie_Przez_Wstawianie_Testy
             int[] expected = Array.Empty<int>();
             Assert.Equal(expected, _sorter.Sort(input));
         }
+	[Fact]
+	public void Test4()
+	{
+    	    Assert.Throws<ArgumentNullException>(() => _sorter.Sort(null));
+	}
 
     }
 }
