@@ -16,6 +16,13 @@ namespace Sortowanie_Przez_Wstawianie_Testy
             Assert.Equal(expected, _sorter.Sort(input));
         }
 
+        [Fact]
+        public void Test2()
+        {
+            int[] input = { 1, 2, 3 };
+            int[] expected = { 1, 2, 3 };
+            Assert.Equal(expected, _sorter.Sort(input));
+        }
 
     }
 }
